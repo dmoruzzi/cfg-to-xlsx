@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFG to XLSX - Telephony</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>CFG to XLSX</h1><input type="file" id="file-upload" class="form-control-file" accept=".cfg,.ini">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <textarea id="cfg-textarea" class="form-control" rows="5" placeholder="Paste CFG content here"></textarea>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button id="generate-excel-btn" class="btn btn-success" disabled>Generate Excel</button> <button id="reset-btn" class="btn btn-danger" disabled>Reset</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="about">
+                    <h3>About</h3>
+                    <p>This applet simplifies the process by converting CFG files into XLSX format. This conversion is particularly beneficial for telephony solutions like Genesys Cloud Services, as it enables business users to compare configurations in a more user-friendly Excel format, facilitating better decision-making and collaboration within the organization.</p>
+                    <p>To uphold data integrity standards within enterprise environments, it is advisable to download the index.html and app.js files, review the code, and execute them locally. The code is designed to be straightforward and auditable for a non-development orientated audience to understand.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js" integrity="sha512-ZfFfcp0ll1jVjeG5e7uPH1hwUyeoBUVAb3xRJpqBsH90jVegaYKv5nGOhGnUYxZg/kbYpl6EWVGvmWrbV32L9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
